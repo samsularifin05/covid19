@@ -105,8 +105,8 @@ export default Home;
 const styles = StyleSheet.create({
   imageBanner:{
     marginTop: 14,
-    height: 115,
-    width: '100%',
+    height: 130,
+    width: 360,
     marginBottom: 16,
   },
   categoris: {
