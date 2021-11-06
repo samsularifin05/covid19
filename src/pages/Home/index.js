@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   },
   categoris: {
     justifyContent: 'center',
-    marginRight: 10,
+    marginRight: 30,
   },
   imageKategori: {
     width: 100,
