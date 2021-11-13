@@ -19,7 +19,7 @@ import {
   VKJagaJarak,
   VKPakaiMasker,
 } from '../../assets';
-import {Header} from '../../components';
+import {Header, Normalize} from '../../components';
 import {colors} from '../../utils';
 
 const Home = ({navigation}) => {
@@ -105,8 +105,8 @@ export default Home;
 const styles = StyleSheet.create({
   imageBanner:{
     marginTop: 14,
-    height: 130,
-    width: 360,
+    height: Normalize(120),
+    width: Normalize(335),
     marginBottom: 16,
   },
   categoris: {

@@ -9,7 +9,7 @@ import {
   ScrollView,
 } from 'react-native';
 import {VKGlassBottom, VKGrafik} from '../../assets';
-import {Header} from '../../components';
+import {Header,Normalize} from '../../components';
 import Gap from '../../components/Gap';
 import {colors} from '../../utils';
 import {
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
   }),
   title2: aktifCountry => ({
     color: aktifCountry ? colors.black : colors.white,
-    marginLeft: hp('1%'),
+    marginLeft: Normalize(4),
   }),
   wrapperSection: {
     flexDirection: 'row',
@@ -156,8 +156,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: aktifGlobal ? colors.white : 'rgba(0, 0, 0, 0.0)',
     marginTop: hp('-8%'),
-    marginLeft: wp('4%'),
+    // marginLeft: wp('4%'),
     height: hp('6%'),
+    margin : 16,
     width: wp('40%'),
     borderRadius: 50,
   }),
@@ -167,10 +168,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: aktifCountry ? colors.white : 'rgba(0, 0, 0, 0.0)',
     marginTop: hp('-8%'),
-    marginLeft: hp('3.5%'),
-    marginRight: hp('2%'),
+    marginLeft: Normalize(30),
+    marginRight: Normalize(10),
+    margin : 16,
     height: hp('6%'),
-    width: wp('40%'),
+    width: Normalize(130),
     borderRadius: 50,
   }),
 
